@@ -1,4 +1,4 @@
-# Classroom Management Software
+# DashTeach - Manage at a Dashing Speed
 
 We've made a quick and easy to use portal for teachers and students to enhance proficiency. It helps save time by making everything so easy to edit that its your PERFECT software.
 
