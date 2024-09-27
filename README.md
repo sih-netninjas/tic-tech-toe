@@ -24,7 +24,7 @@ We've made a quick and easy to use portal for teachers and students to enhance p
 To get started with the project, clone the repository using:
 
 ```cmd
-git clone https://github.com/dashteach/DashTeaching.git
-cd DashTeaching
+git clone https://github.com/sih-netninjas/tic-tech-toe
+cd tic-tech-toe
 code .
 ```
