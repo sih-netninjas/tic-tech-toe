@@ -1,11 +1,6 @@
 const mongoose = require('mongoose')
 
 const SubjectSchema = mongoose.Schema({
-  branch: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: 'Branch',
-    required: true,
-  },
   sem: {
     type: Number,
     required: true,
