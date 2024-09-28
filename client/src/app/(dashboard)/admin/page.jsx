@@ -1,6 +1,5 @@
 import Announcements from "../../../components/Announcements";
 import UserCard from "../../../components/UserCard";
-import BigCalendar from "../../../components/BigCalendar";
 import CountChart from "../../../components/CountChart";
 import AttendanceChart from "../../../components/AttendanceChart";
 import EventCalendar from "../../../components/EventCalendar";
@@ -39,12 +38,32 @@ const AdminPage = () => {
         <div className="w-full h-[500px]">
           <FinanceChart />
         </div>
-        <SubjectInsertForm />
-        <SubjectDeleteForm />
-        <SubjectUpdateForm />
-        <BranchInsertForm />
-        <BranchDeleteForm />
-        <BranchEditForm />
+
+        <div className="flex flex-wrap space-x-4">
+          <div className="w-[405px] p-4 bg-white rounded-lg shadow-md">
+            <SubjectInsertForm />
+          </div>
+
+          <div className="w-[405px] p-4 bg-white rounded-lg shadow-md">
+            <SubjectDeleteForm />
+          </div>
+        </div>
+        <div className="flex flex-wrap space-x-4">
+          <div className="w-[405px] p-4 bg-white rounded-lg shadow-md">
+            <SubjectUpdateForm />
+          </div>
+          <div className="w-[405px] p-4 bg-white rounded-lg shadow-md">
+            <BranchInsertForm />
+          </div>
+        </div>
+        <div className="flex flex-wrap space-x-4">
+          <div className="w-[405px] p-4 bg-white rounded-lg shadow-md">
+            <BranchDeleteForm />
+          </div>
+          <div className="w-[405px] p-4 bg-white rounded-lg shadow-md">
+            <BranchEditForm />
+          </div>
+        </div>
       </div>
       {/* RIGHT */}
       <div className="w-full lg:w-1/3 flex flex-col gap-8">
