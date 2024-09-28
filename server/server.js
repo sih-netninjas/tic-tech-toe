@@ -15,6 +15,7 @@ app.use('/subjects', require('./routes/subject.routes'))
 app.use('/branches', require('./routes/branch.routes'))
 app.use('/auth/', require('./routes/auth.routes'))
 app.use('/events', require('./routes/event.routes'))
+app.use('/announcements', require('./routes/Announcements.routes'))
 
 app.get('/', (req, res) => {
   res.send('Hello')
