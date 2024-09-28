@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 connectDB();
 
 app.use("/subjects", require("./routes/subject.routes"));
-
+app.use("/branches", require("./routes/branch.routes"));
 app.get("/", (req, res) => {
   res.send("Hello");
 });

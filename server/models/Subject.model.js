@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const SubjectSchema = mongoose.Schema({
   sem: {
@@ -13,6 +13,8 @@ const SubjectSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-})
+});
 
-const Subject = mongoose.model('Subject', SubjectSchema)
+const Subject = mongoose.model("Subject", SubjectSchema);
+
+module.exports = Subject;
