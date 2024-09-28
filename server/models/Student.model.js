@@ -1,12 +1,16 @@
 const mongoose = require('mongoose')
 
 const StudentSchema = mongoose.Schema({
+  password: {
+    type: String,
+    required: true,
+  },
   name: {
     type: String,
     required: true,
   },
   eno: {
-    type: Number,
+    type: String,
     required: true,
   },
   sem: {
