@@ -9,21 +9,21 @@ import "react-calendar/dist/Calendar.css";
 const events = [
   {
     id: 1,
-    title: "Lorem ipsum dolor",
+    title: "Event-1",
     time: "12:00 PM - 2:00 PM",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Event info.",
   },
   {
     id: 2,
-    title: "Lorem ipsum dolor",
+    title: "Event-2",
     time: "12:00 PM - 2:00 PM",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Event info",
   },
   {
     id: 3,
-    title: "Lorem ipsum dolor",
+    title: "Event-3",
     time: "12:00 PM - 2:00 PM",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Event info",
   },
 ];
 

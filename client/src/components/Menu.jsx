@@ -9,7 +9,7 @@ const menuItems = [
       {
         icon: "/home.png",
         label: "Home",
-        href: "/",
+        href: "/admin",
         visible: ["admin", "teacher", "student", "parent"],
       },
       {
@@ -21,7 +21,7 @@ const menuItems = [
       {
         icon: "/student.png",
         label: "Students",
-        href: "/list/students",
+        href: "/student",
         visible: ["admin", "teacher"],
       },
       {
@@ -80,8 +80,8 @@ const menuItems = [
       },
       {
         icon: "/message.png",
-        label: "Messages",
-        href: "/list/messages",
+        label: "New",
+        href: "/list/new",
         visible: ["admin", "teacher", "student", "parent"],
       },
       {
@@ -121,7 +121,10 @@ const Menu = () => {
   return (
     <div className="mt-4 text-sm">
       {menuItems.map((menu) => (
-        <div className="flex flex-col gap-2" key={menu.title}>
+        <div
+          className="flex flex-col gap-2 overflow-y-scroll h-[90vh]"
+          key={menu.title}
+        >
           <span className="hidden lg:block text-gray-400 font-light my-4">
             {menu.title}
           </span>
