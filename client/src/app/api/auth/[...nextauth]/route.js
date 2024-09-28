@@ -30,7 +30,11 @@ export const authOptions = {
                 password: credentials.password,
                 userType: credentials.userType,
               }
-            : { username: credentials.username, password: credentials.password }
+            : {
+                username: credentials.username,
+                password: credentials.password,
+                userType: credentials.userType,
+              }
 
         const user = await fetch('http://localhost:5000/auth/signin', {
           method: 'POST',
