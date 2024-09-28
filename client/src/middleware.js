@@ -3,7 +3,8 @@ import { getToken } from 'next-auth/jwt'
 
 export async function middleware(req) {
   // Retrieve the token from the request
-  const token = await getToken({ req, secret: process.env.NEXTAUTH_SECRET })
+  const token = await getToken({ req })
+  console.log('Middleware Token:', token)
 
   // If no token is found, redirect to sign-in page
   if (!token) {
