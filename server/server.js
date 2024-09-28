@@ -19,7 +19,7 @@ app.use('/announcements', require('./routes/Announcements.routes'))
 
 app.get('/', (req, res) => {
   res.send('Hello')
-})
+})                                                                                                                                                                                                            
 
 app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost${PORT}`)

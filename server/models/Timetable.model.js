@@ -9,6 +9,12 @@ const TimeSlotSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  teachers: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Teachers',
+    },
+  ],
   subjects: [
     {
       type: mongoose.Schema.Types.ObjectId,
