@@ -8,6 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        lamaYellow: "#FFF5CD",
+        lamaPurple: "#E4B1F0",
+        lamaSkyLight: "#B7E0FF",
+        LamaSky: "#81DAE3",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
